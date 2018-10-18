@@ -21605,7 +21605,8 @@ parcelRequire = function(e, r, n) {
                                             a = e.right,
                                             o = e.classProb;
                                         y(n, t, a - n, r - t, e.className + " Confidence: " + Math.round(100 * o) + "%")
-                                        console.log("predicted class:"+e.className)
+                                        console.log("predicted class:"+e.className);
+                                        document.getElementById("yolo-result").innerHTML = "predicted class:"+e.className;
 
                                     }), e.next = 12, c.nextFrame();
                                 case 12:
